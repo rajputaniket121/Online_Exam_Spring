@@ -3,7 +3,6 @@ package com.online_exam_system.model;
 import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
-import javax.persistence.GenerationType;
 import javax.persistence.Id;
 import javax.persistence.Table;
 
@@ -12,7 +11,7 @@ import javax.persistence.Table;
 public class UserModel {
 	@Id
 	@Column(name = "id")
-	@GeneratedValue(strategy = GenerationType.AUTO)
+	@GeneratedValue
 	private Long id;
 	@Column(name = "Fullname")
 	private String fullname;

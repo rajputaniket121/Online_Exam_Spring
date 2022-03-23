@@ -6,7 +6,6 @@ import org.springframework.data.jpa.repository.JpaRepository;
 
 import com.online_exam_system.model.UserModel;
 
-public interface UserModelRepository extends JpaRepository<UserModel, Long> {
+public interface UserRepository extends JpaRepository<UserModel, Long> {
 	List<UserModel> findByUsername(String username);
-
 }

@@ -18,7 +18,7 @@ import org.springframework.web.bind.annotation.*;
 @RequestMapping("/api")
 public class UserController {
 	@Autowired
-	UserModelRepository UserModelRepository;
+	UserRepository UserModelRepository;
 
 	@GetMapping("/users")
 	public ResponseEntity<List<UserModel>> getAllUserModels(@RequestParam(required = false) String username) {
