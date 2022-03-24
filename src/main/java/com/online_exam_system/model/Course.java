@@ -20,7 +20,7 @@ public class Course {
 	private String coursename;
 	private int courselevel;
 	
-	@OneToMany(mappedBy = "course",fetch = FetchType.EAGER,cascade = CascadeType.ALL)
+	@OneToMany(mappedBy = "course",cascade = CascadeType.ALL)
 	@JsonIgnore
 	private Set<Quiz> quizzes = new LinkedHashSet<>();
 	
